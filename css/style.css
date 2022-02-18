@@ -1,0 +1,72 @@
+#todo {
+    font-family: 'Raleway', sans-serif;
+    background-color: #F5F5F5;
+    width: 1440px;
+    margin: 3vh auto;
+    color: #464646;
+}
+
+.nombreCompleto {
+    font-weight: bold;
+    position: fixed;
+}
+
+.nombreCompleto:hover {
+    color: hsl(300, 84%, 18%);
+    transform: scale(1.5, 1.5);
+    transition: 1.5s all;
+}
+
+.navbarMenu {
+    padding: 2vh 0;
+}
+
+.menu {
+    display: flex;
+    justify-content: end;
+}
+
+.menu li {
+    padding: 0 1vw;
+}
+
+.menu li:last-child {
+    font-weight: bold;
+}
+
+.primeraImpresion {
+    margin: 5vh 0;
+    display: flex;
+    align-items: center;
+}
+
+.presentacion {
+    width: 40vw;
+    font-size: 52px;
+    margin-bottom: 3vh;
+}
+
+.intro {
+    width: 40vw;
+    font-size: 22px;
+    margin-bottom: 2vh;
+}
+
+.contacto {
+    display: flex;
+    justify-content: center;
+}
+
+.contacto li {
+    margin-right: 2vw;
+}
+
+.flecha {
+    width: 15px;
+    margin-left: 5px;
+}
+.perfil {
+    width: 30vw;
+    border-radius: 50%;
+    margin-left: 3vw;
+}
