@@ -1,14 +1,22 @@
 #todo {
     font-family: 'Raleway', sans-serif;
     background-color: #F5F5F5;
-    width: 75vw;
-    margin: 3vh auto;
     color: #464646;
+}
+
+.header {
+    margin: 5vh 10vw;
+}
+
+.headerContainer {
+    display: flex;
+    justify-content: start;
+    align-items: center;
 }
 
 .nombreCompleto {
     font-weight: bold;
-    position: fixed;
+    font-size: larger;
 }
 
 .nombreCompleto:hover {
@@ -17,30 +25,36 @@
     transition: 1.5s all;
 }
 
-.navbarMenu {
-    padding: 2vh 0;
-}
-
-.menu {
+.menuContainer {
     display: flex;
-    justify-content: end;
+    position: absolute;
+    top: 5vh;
+    right: 10vw;
 }
 
-.menu li {
-    padding: 0 1vw;
+.menuContainer li {
+    margin: 0 1vw;
 }
 
-.menu li:last-child {
+.menuContainer li:last-child {
     font-weight: bold;
 }
 
+.menuContainer li:hover {
+    font-weight: bold;
+    color: hsl(300, 84%, 18%);
+    transform: scale(1.2);
+    transition: .5s all;
+}
+
 .primeraImpresion {
-    margin: 5vh 0;
+    margin: 10vh 10vw;
     display: flex;
     align-items: center;
 }
 
 .presentacion {
+    display: block;
     width: 40vw;
     font-size: 52px;
     margin-bottom: 3vh;
@@ -52,6 +66,21 @@
     margin-bottom: 3vh;
 }
 
+.oracleImg {
+    width: 5vw;
+}
+
+.oracleImg:hover {
+    filter: brightness(120%);
+}
+.linksAlura {
+    font-size: larger;
+    color: hsl(214, 77%, 52%);
+}
+
+.linksAlura:hover {
+    color: hsl(214, 82%, 32%);
+}
 .contacto {
     display: flex;
     justify-content: start;
@@ -59,14 +88,81 @@
 
 .contacto li {
     margin-right: 2vw;
+    font-size: large
+}
+
+.contacto li:hover {
+    font-weight: bold;
+    color: hsl(300, 84%, 18%);
+    transform: scale(1.2);
+    transition: .5s all;
 }
 
 .flecha {
-    width: 15px;
+    width: 10px;
     margin-left: 5px;
 }
+
 .perfil {
     width: 30vw;
     border-radius: 50%;
     margin-left: 3vw;
+}
+
+.sobreMi {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: hsla(210, 83%, 95%);
+}
+
+.tituloSobreMi {
+    margin: 5vh 10vw 2vh;
+    font-size: 52px;
+    font-weight: bold;
+}
+
+.parrafos {
+    margin:2vh 10vw;
+    padding-right: 40vw;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 19px;
+}
+
+.parrafos:last-child {
+    padding-bottom: 5vh;
+}
+
+.skillsHobbies {
+    margin: 5vh 10vw;
+}
+
+.skillsTitulo {
+    margin-bottom: 5vh;
+    font-size: 32px;
+    text-align: center;
+}
+
+.skillsContainer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    width: 175px;
+    height: 175px;
+    background-color: hsl(0, 0%, 100%);
+}
+
+.skill p {
+    margin: .5vh .5vw;
+}
+.logos {
+    width: 2vw;
+    margin-left: .25vw;
 }

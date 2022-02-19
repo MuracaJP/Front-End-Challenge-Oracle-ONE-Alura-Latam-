@@ -17,53 +17,107 @@
 
 <body id="todo">
 
-    <header>
+    <header class="header">
 
-        <nav class="navbarMenu">
+        <div class="headerContainer">
 
             <a href="https://github.com/MuracaJP" class="nombreCompleto" target="blank">Juan Pablo Muraca</a>
 
-            <ul class="menu">
-                <li>Sobre mi</li>
-                <li>Skills</li>
-                <li>Hobbies</li>
-                <li>Formación</li>
-                <li>Proyectos</li>
-                <li>muracjp@gmail.com</li>
-            </ul>
-        </nav>
+            <nav>
+                <ul class="menuContainer">
+                    <li><a href="#sobreMi">Sobre mi</a></li>
+                    <li>Skills</li>
+                    <li>Hobbies</li>
+                    <li>Formación</li>
+                    <li>Proyectos</li>
+                    <li><a href="mailto:muracjp@gmail.com"></a> muracjp@gmail.com</li>
+                </ul>
+            </nav>
+
+        </div>
+
     </header>
+    <!-- Fin Header -->
 
     <main class="primeraImpresion">
-
-        <nav>
-
+        <div>
             <h1 class="presentacion">Hola, mi nombre es Juan Pablo Muraca y soy maquetador web</h1>
             <h2 class="intro">Manejo muy bien HTML5, CSS, Sass, Javascript y Github y actualmente sigo aprendiendo
-                gracias
-                proyecto Oracle ONE en Alura Latam</h2>
+                gracias al proyecto <a href="https://www.oracle.com/index.html"><img src="images/oracle.svg"
+                        alt="oracle" class="oracleImg"></a> ONE en <a href="https://www.aluracursos.com/"
+                    class="linksAlura" target="blank">Alura Latam</a>
+            </h2>
 
-            <ul class="contacto">
-                <li><a href="https://github.com/MuracaJP">Github</a>
-                    <img src="images/flecha.svg" alt="flecha" class="flecha">
-                </li>
-                <li><a href="linkedin.com/in/juan-pablo-muraca-frontend-developer ">LinkedIn</a>
-                    <img src="images/flecha.svg" alt="flecha" class="flecha">
-                </li>
-                <li><a href="https://www.instagram.com/muracajp/">Instagram</a>
-                    <img src="images/flecha.svg" alt="flecha" class="flecha">
-                </li>
-                <li><a href="CV-Juan Pablo Muraca.pdf">Currículo</a>
-                    <img src="images/flecha.svg" alt="flecha" class="flecha">
-                </li>
-            </ul>
-        </nav>
-           
+            <nav>
+                <ul class="contacto">
+
+                    <li><a href="https://github.com/MuracaJP" target="blank">Github</a>
+                        <img src="images/flecha.svg" alt="flecha" class="flecha">
+                    </li>
+
+                    <li><a href="linkedin.com/in/juan-pablo-muraca-frontend-developer " target="blank">LinkedIn</a>
+                        <img src="images/flecha.svg" alt="flecha" class="flecha">
+                    </li>
+
+                    <li><a href="https://www.instagram.com/muracajp/" target="blank">Instagram</a>
+                        <img src="images/flecha.svg" alt="flecha" class="flecha">
+                    </li>
+
+                    <li><a href="CV-Juan Pablo Muraca.pdf" target="blank">Currículo</a>
+                        <img src="images/flecha.svg" alt="flecha" class="flecha">
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
         <img src="images/perfil.jpg" alt="estrellas" class="perfil">
-
     </main>
+    <!-- Fin sección principal -->
 
+    <section id="sobreMi" class="sobreMi">
 
+        <h2 class="tituloSobreMi">Sobre mi</h2>
+
+        <p class="parrafos">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam necessitatibus excepturi velit deserunt,
+            ullam odit impedit veritatis. Fugit non libero culpa provident nobis, nemo distinctio, excepturi cupiditate
+            explicabo voluptate laudantium?
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit, error quisquam. Ut eum magnam minus rem aut
+            error quas, porro officiis sequi in harum atque eos totam cupiditate sapiente. Sequi?
+        </p>
+
+        <p class="parrafos">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus, sequi asperiores explicabo laborum
+            saepe corrupti nisi non voluptate quia facilis amet, quae eius totam reiciendis, culpa eos soluta autem
+            consectetur.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, non odio deserunt repellat asperiores,
+            dolor maxime, ad placeat a accusantium ea minus. Corrupti ad quam animi optio voluptas repellendus
+            exercitationem.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima consequuntur beatae tempora temporibus
+            laboriosam delectus eius culpa iure praesentium! Accusantium sit esse velit provident harum temporibus autem
+            ipsam expedita? Porro.
+        </p>
+    </section>
+    <!-- Fin sección sobreMi -->
+
+    <section class="skillsHobbies">
+
+        <h2 class="skillsTitulo">Skills</h2>
+
+        <div class="skillsContainer">
+
+            <div class="skill"><img src="images/" alt="HTML5 logo" class="logos"><p>Html5</p></div>
+
+            <div class="skill"><img src="images/icons8-css3.svg" alt="css3 log" class="logos"><p>CSS</p></div>
+
+            <div class="skill"><img src="images/icons8-javascript.svg" alt="javascript logo" class="logos"><p>Javascript</p></div>
+
+            <div class="skill"><img src="images/icons8-git.svg" alt="git logo" class="logos"><p>Git</p></div>
+
+            <div class="skill"><img src="images/icons8-github.svg" alt="github logo" class="logos"><p>Github</p></div>
+        </div>
+
+    </section>
 </body>
 
 </html>
