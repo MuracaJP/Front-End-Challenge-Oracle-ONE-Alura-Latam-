@@ -17,7 +17,7 @@
 
 <body id="todo">
 
-    <header class="header">
+    <header id="header" class="header">
 
         <div class="headerContainer">
 
@@ -26,11 +26,11 @@
             <nav>
                 <ul class="menuContainer">
                     <li><a href="#sobreMi">Sobre mi</a></li>
-                    <li>Skills</li>
-                    <li>Hobbies</li>
-                    <li>Formación</li>
-                    <li>Proyectos</li>
-                    <li><a href="mailto:muracjp@gmail.com"></a> muracjp@gmail.com</li>
+                    <li><a href="#skillsContainer">Skills</a></li>
+                    <li><a href="#hobbiesContainer">Hobbies</a> </li>
+                    <li><a href="#formacion">Formación</a></li>
+                    <li><a href="#experiencia">Proyectos</a></li>
+                    <li><a href="mailto:muracjp@gmail.com">muracjp@gmail.com</a></li>
                 </ul>
             </nav>
 
@@ -100,24 +100,149 @@
     </section>
     <!-- Fin sección sobreMi -->
 
-    <section class="skillsHobbies">
+    <section id="skillsContainer" class="skillsHobbies">
 
         <h2 class="skillsTitulo">Skills</h2>
 
         <div class="skillsContainer">
 
-            <div class="skill"><img src="images/" alt="HTML5 logo" class="logos"><p>Html5</p></div>
+            <div class="skill"><img src="images/html5-svgrepo-com.svg" alt="HTML5 logo" class="logos">
+                <p>Html5</p>
+            </div>
 
-            <div class="skill"><img src="images/icons8-css3.svg" alt="css3 log" class="logos"><p>CSS</p></div>
+            <div class="skill"><img src="images/icons8-css3.svg" alt="css3 logo" class="logos">
+                <p>CSS</p>
+            </div>
 
-            <div class="skill"><img src="images/icons8-javascript.svg" alt="javascript logo" class="logos"><p>Javascript</p></div>
+            <div class="skill"><img src="images/sass-svgrepo-com.svg" alt="sass logo" class="logos">
+                <p>Sass</p>
+            </div>
 
-            <div class="skill"><img src="images/icons8-git.svg" alt="git logo" class="logos"><p>Git</p></div>
+            <div class="skill"><img src="images/icons8-javascript.svg" alt="javascript logo" class="logos">
+                <p>Javascript</p>
+            </div>
 
-            <div class="skill"><img src="images/icons8-github.svg" alt="github logo" class="logos"><p>Github</p></div>
+            <div class="skill"><img src="images/icons8-git.svg" alt="git logo" class="logos">
+                <p>Git</p>
+            </div>
+
+            <div class="skill"><img src="images/icons8-github.svg" alt="github logo" class="logos">
+                <p>Github</p>
+            </div>
         </div>
+        <!-- Fin sección skills-->
 
+        <section id="hobbiesContainer" class="skillsHobbies">
+
+            <h2 class="hobbiesTitulo">Hobbies</h2>
+
+            <div class="hobbiesContainer">
+
+                <div class="skill"><img src="images/males-friends-hug-side-by-side-svgrepo-com.svg" alt="amigos logo"
+                        class="logos">
+                    <p>Amigos</p>
+                </div>
+
+                <div class="skill"><img src="images/headphones-svgrepo-com.svg" alt="auriculares" class="logos">
+                    <p>Música</p>
+                </div>
+
+                <div class="skill"><img src="images/books-svgrepo-com.svg" alt="libros logo" class="logos">
+                    <p>Lectura</p>
+                </div>
+
+                <div class="skill"><img src="images/yoga-svgrepo-com.svg" alt="yoga logo" class="logos">
+                    <p>Yoga</p>
+                </div>
+
+                <div class="skill"><img src="images/input-gaming-svgrepo-com.svg" alt="gaming logo" class="logos">
+                    <p>Juegos</p>
+                </div>
+            </div>
+        </section>
     </section>
+    <!-- Fin sección hobbies -->
+
+    <section id="formacion" class="formacion">
+
+        <h2 class="formacionTitulo">Formación académica</h2>
+
+        <div class="formacionContainer">
+            <div class="cursos">
+                <img src="images/colegio.jpg" alt="colegio parroquial San Carlos Borromeo" class="formacionImg">
+                <p class="nombreCurso">Bachillerato</p>
+                <p>2007 - Colegio Parroquial San Carlos Borromeo</p>
+            </div>
+            <div class="cursos">
+                <img src="images/coderhouse-logo.png" alt="coderhouse logo" class="formacionImg">
+                <p class="nombreCurso">Desarrollo Web y Javascript</p>
+                <p>2020 - Coderhouse</p>
+            </div>
+            <div class="cursos">
+                <img src="images/logo_oracleAlura-es.1639517340.svg" alt="" class="formacionImg">
+                <p class="nombreCurso">Proyecto ONE Oracle</p>
+                <p>En curso - Alura Latam</p>
+            </div>
+        </div>
+    </section>
+    <!-- Fin sección formación -->
 </body>
+
+<section id="experiencia" class="experiencia">
+
+    <h2 class="xpTitulo">Experiencia profesional</h2>
+
+    <div class="proyectosContainer">
+        <div class="proyectos">
+            <img src="images/proyectos/ecologic.png" alt="foto página web" class="proyectoImg">
+        </div>
+        <div>
+            <p class="nombreProyecto">Ecologic - Landing page + galería de productos</p>
+            <p>Desarrollo Web - Coderhouse</p>
+            <button class="repoBtn"><a href="https://github.com/MuracaJP/Ecologic">Repositorio</a></button>
+            <button class="demoBtn"><a href="https://muracajp.github.io/Ecologic/">Ver demo</a></button>
+        </div>
+    </div>
+
+    <div class="proyectosContainer">
+        <div class="proyectos">
+            <img src="images/proyectos/saludables.png" alt="foto página web" class="proyectoImg">
+        </div>
+        <div>
+            <p class="nombreProyecto">Saludables tentaciones - Landing page + simulador de pedidos</p>
+            <p>Javascript - Coderhouse</p>
+            <button class="repoBtn"><a href="https://github.com/MuracaJP/Saludables-Tentaciones">Repositorio</a></button>
+            <button class="demoBtn"><a href="https://muracajp.github.io/Saludables-Tentaciones/">Ver demo</a></button>
+        </div>
+    </div>
+
+    <div class="proyectosContainer">
+        <div class="proyectos">
+            <img src="images/proyectos/la-cueva.png" alt="foto página web" class="proyectoImg">
+        </div>
+        <div >
+            <p class="nombreProyecto">La cueva - Landing page</p>
+            <p>Proyecto real - Top 10 Desarrollo Web</p>
+            <button class="repoBtn"><a href="https://github.com/MuracaJP/La-Cueva">Repositorio</a></button>
+            <button class="demoBtn"><a href="https://muracajp.github.io/La-Cueva/">Ver demo</a></button>
+        </div>
+    </div>
+
+    <div class="proyectosContainer">
+        <div class="proyectos">
+            <img src="images/proyectos/primer-challenge.png" alt="foto página web" class="proyectoImg">
+        </div>
+        <div>
+            <p class="nombreProyecto">Ecologic - Landing page y galería de productos</p>
+            <p>Sitio web de productos ecológicos</p>
+            <button class="repoBtn"><a href="https://github.com/MuracaJP/Primer-Challenge-Alura">Repositorio</a></button>
+            <button class="demoBtn"><a href="https://muracajp.github.io/Primer-Challenge-Alura/">Ver demo</a></button>
+        </div>
+    </div>
+
+</section>
+<!-- Fin sección experiencia-->
+
+<a href="#header"><img src="images/up-arrow-svgrepo-com.svg" alt="flecha apuntando arriba" class="volverInicio"></a>
 
 </html>

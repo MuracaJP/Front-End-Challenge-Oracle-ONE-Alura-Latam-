@@ -4,7 +4,7 @@
     color: #464646;
 }
 
-.header {
+.header, .skillsHobbies, .experiencia {
     margin: 5vh 10vw;
 }
 
@@ -73,6 +73,7 @@
 .oracleImg:hover {
     filter: brightness(120%);
 }
+
 .linksAlura {
     font-size: larger;
     color: hsl(214, 77%, 52%);
@@ -113,7 +114,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    background-color: hsla(210, 83%, 95%);
+    background-color: hsl(210, 83%, 95%);
 }
 
 .tituloSobreMi {
@@ -135,17 +136,18 @@
     padding-bottom: 5vh;
 }
 
-.skillsHobbies {
+.skillsHobbies  {
     margin: 5vh 10vw;
 }
 
-.skillsTitulo {
+.skillsTitulo, .hobbiesTitulo, .formacionTitulo, .xpTitulo {
     margin-bottom: 5vh;
-    font-size: 32px;
+    font-size: 40px;
+    font-weight: bold;
     text-align: center;
 }
 
-.skillsContainer {
+.skillsContainer, .hobbiesContainer {
     display: flex;
     justify-content: space-around;
 }
@@ -153,7 +155,8 @@
 .skill {
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    justify-content: center;
+    align-items: center;
     width: 175px;
     height: 175px;
     background-color: hsl(0, 0%, 100%);
@@ -164,5 +167,90 @@
 }
 .logos {
     width: 2vw;
-    margin-left: .25vw;
+}
+
+.logos:hover {
+    transform: scale(1.5);
+    transition: 1s all;
+    filter: drop-shadow(3px 5px 1.5px hsl(300, 84%, 37%));
+}
+.formacionContainer {
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+}
+.formacion {
+    padding: 5vh 0;
+    background-color: hsl(210, 83%, 95%);
+}   
+
+.formacionImg {
+    background-color: hsl(0, 0%, 100%);
+}
+
+.formacionImg{
+    width: 500px;
+    height: 350px;
+    object-fit: contain;
+}
+
+.nombreCurso {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: .5vh;
+}
+
+.proyectosContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.proyectos{
+    margin: 5vh 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nombreProyecto {
+    width: 25vw;
+    margin-bottom: 1vh;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.proyectoImg{
+    width: 40vw; 
+}
+
+.repoBtn {
+    width: 120px;
+    height: 60px;
+    margin-top: 1vh;
+    border: 1px solid hsl(214, 77%, 52%);
+    color: hsl(214, 77%, 52%);
+    text-align: center;
+}
+
+.demoBtn {
+    width: 110px;
+    height: 60px;
+    margin-top: 1vh;
+    margin-left: 1vw;
+    background-color:hsl(214, 77%, 52%);
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+}
+.volverInicio {
+    width: 3vw;
+    position: sticky;
+    left: 92vw;
+    bottom: 8vh;
+}
+
+.volverInicio:hover {
+    transform: scale(1.2);
+    transition: 1s all;
 }
