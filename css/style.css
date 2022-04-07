@@ -1,7 +1,8 @@
-#todo {
+:root {
     font-family: 'Raleway', sans-serif;
     background-color: #F5F5F5;
     color: #464646;
+    scroll-behavior: smooth;
 }
 
 .header, .primeraImpresion, .skillsHobbies, .experienciaContainer {
@@ -283,6 +284,9 @@
     flex-direction: column;
 }
 
+.formContainer p {
+    padding-bottom: 10px;
+}
 .contactoTitulo {
     margin-bottom: 1vh;
     font-size: 40px;
@@ -512,5 +516,9 @@ h6 {
         width: 35px;
         right: 8px;
         bottom: 8px;
+    }
+
+    .oculto {
+        display: none;
     }
 }

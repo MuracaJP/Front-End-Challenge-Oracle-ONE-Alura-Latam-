@@ -265,18 +265,18 @@
 
         <h2 class="contactoTitulo">Contacto</h2>
 
-        <p>¿Quieres contactarme?</p>
-        <p>Complete el siguiente formulario y me pondré en contacto con usted lo antes posible.</p>
+        <p>¿Querés decirme algo?</p>
+        <p>Completá el siguiente formulario y dejame tu mensaje</p>
 
-        <form action="" class="form">
+        <form class="form">
 
-            <input type="text" id="nombre" placeholder="Nombre" class="nombre">
+            <input type="text" id="nombre" placeholder="Nombre" class="nombre" pattern="([A-Za-z]){2,12}" required>
 
-            <input type="text" id="email" placeholder="E-mail" class="email">
+            <input type="email" id="email" placeholder="E-mail" class="email" required>
 
-            <input type="text" id="asunto" placeholder="Asunto" class="asunto">
+            <input type="text" id="asunto" placeholder="Asunto" class="asunto" minlength="4" maxlength="50" required>
 
-            <input type="text" id="mensaje" placeholder="Mensaje" class="mensaje">
+            <input type="text" id="mensaje" placeholder="Mensaje" class="mensaje" minlength="25" maxlength="300" required>
 
             <button class="enviarMsj">Enviar mensaje</button>
         </form>
@@ -290,5 +290,5 @@
 
 <a href="#header"><img src="images/up-arrow-svgrepo-com.svg" alt="flecha apuntando arriba" class="volverInicio"></a>
 
-
+<script src="js/validaciones.js"></script>
 </html>
